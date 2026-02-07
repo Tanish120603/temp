@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be My Valentine? 💕</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Step 1: Opening -->
+        <div class="step active" id="step1">
+            <h1 style="font-size: 1.8em; line-height: 1.6;">Helloo GG ki malkin 💅<br>We might have something for you here..</h1>
+            <button class="btn-primary" onclick="nextStep()">Let's go 🏃</button>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #999;">(wuhuuu 🎉, someone might be asking you out finallyy!!)</p>
+        </div>
+
+        <!-- Step 2: Before Timeline -->
+        <div class="step" id="step2">
+            <h1 style="font-size: 2em; line-height: 1.6;">Let's take a walk down the lane first 🚶‍♂️.<br>Are you ready??</h1>
+            <button class="btn-primary" onclick="nextStep()">Yes 🥰 </button>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #999;">(No other option available, hehe)</p>
+        </div>
+
+        <!-- Step 3: Timeline Event 1 - Asked Out -->
+        <div class="step" id="step3">
+            <div class="timeline-date">21st July</div>
+            <h2 class="timeline-title">The Sailed Ship Text</h2>
+            <div class="timeline-photo-container">
+                <img src="photos/july21.jpeg" alt="21st July" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd your photo here%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="btn-primary" onclick="nextStep()">Next 😍</button>
+        </div>
+
+        <!-- Step 4: Timeline Event 2 - First Date -->
+        <div class="step" id="step4">
+            <div class="timeline-date">1st August</div>
+            <h2 class="timeline-title">Our First Date</h2>
+            <div class="timeline-photo-container">
+                <img src="photos/aug1.jpeg" alt="1st August" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd your photo here%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="btn-primary" onclick="nextStep()">Next 😍</button>
+        </div>
+
+        <!-- Step 5: Timeline Event 3 - First Kiss -->
+        <div class="step" id="step5">
+            <div class="timeline-date">5th September</div>
+            <h2 class="timeline-title">Our First Kiss</h2>
+            <div class="timeline-photo-grid">
+                <div class="timeline-photo-item">
+                    <img src="photos/sep5_1.jpeg" alt="5th September 1" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd photo 1%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="timeline-photo-item">
+                    <img src="photos/sep5_2.jpeg" alt="5th September 2" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd photo 2%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="timeline-photo-item">
+                    <img src="photos/sep5_3.jpeg" alt="5th September 3" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd photo 3%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="timeline-photo-item">
+                    <img src="photos/sep5_4.jpeg" alt="5th September 4" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd photo 4%3C/text%3E%3C/svg%3E'">
+                </div>
+            </div>
+            <button class="btn-primary" onclick="nextStep()">Next 😍</button>
+        </div>
+
+        <!-- Step 6: Timeline Event 4 - First Time Staying Together -->
+        <div class="step" id="step6">
+            <div class="timeline-date">26th September</div>
+            <h2 class="timeline-title">First Time Staying Together</h2>
+            <div class="timeline-photo-grid">
+                <div class="timeline-photo-item">
+                    <img src="photos/sep26_1.jpeg" alt="26th September 1" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd photo 1%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="timeline-photo-item">
+                    <img src="photos/sep26_2.jpeg" alt="26th September 2" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd photo 2%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="timeline-photo-item">
+                    <img src="photos/sep26_3.jpeg" alt="26th September 3" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd photo 3%3C/text%3E%3C/svg%3E'">
+                </div>
+                <div class="timeline-photo-item">
+                    <img src="photos/sep26_4.jpeg" alt="26th September 4" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd photo 4%3C/text%3E%3C/svg%3E'">
+                </div>
+            </div>
+            <button class="btn-primary" onclick="nextStep()">Next 😍</button>
+        </div>
+
+        <!-- Step 7: Timeline Event 5 - Living Together -->
+        <div class="step" id="step7">
+            <div class="timeline-date">1st February</div>
+            <h2 class="timeline-title">Living Together</h2>
+            <div class="timeline-photo-container">
+                <img src="photos/feb1.jpeg" alt="1st February" class="timeline-photo" onerror="this.src='data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%22400%22 height=%22300%22%3E%3Crect fill=%22%23f0f0f0%22 width=%22400%22 height=%22300%22/%3E%3Ctext fill=%22%23999%22 font-family=%22sans-serif%22 font-size=%2218%22 x=%2250%25%22 y=%2250%25%22 text-anchor=%22middle%22 dy=%22.3em%22%3EAdd your photo here%3C/text%3E%3C/svg%3E'">
+            </div>
+            <button class="btn-primary" onclick="nextStep()">Next 😍</button>
+        </div>
+
+        <!-- Step 8: After Timeline -->
+        <div class="step" id="step8">
+            <h1 style="font-size: 2em; line-height: 1.6;">As you don't like valentine gifts,<br>Here are some special virtual gifts 🎁<br> for my special lady 😘</h1>
+            <button class="btn-primary" onclick="nextStep()">Continue 🥰</button>
+        </div>
+
+        <!-- Step 9: Valentine's Week Calendar -->
+        <div class="step" id="step9">
+            <h1 style="font-size: 2em; margin-bottom: 10px;">Valentine's Week 💕</h1>
+            <p style="color: #d63384; margin-bottom: 30px;">A special gift for each day...</p>
+            <div class="valentine-calendar">
+                <div class="calendar-day" data-day="7" onclick="openGift(7)">
+                    <div class="gift-box locked" id="gift-7">
+                        <div class="gift-icon">🎁</div>
+                        <div class="gift-date">7th Feb</div>
+                        <div class="gift-name">Rose Day 🌹</div>
+                        <div class="lock-overlay">🔒</div>
+                    </div>
+                </div>
+                <div class="calendar-day" data-day="8" onclick="openGift(8)">
+                    <div class="gift-box locked" id="gift-8">
+                        <div class="gift-icon">🎁</div>
+                        <div class="gift-date">8th Feb</div>
+                        <div class="gift-name">Propose Day 💍</div>
+                        <div class="lock-overlay">🔒</div>
+                    </div>
+                </div>
+                <div class="calendar-day" data-day="9" onclick="openGift(9)">
+                    <div class="gift-box locked" id="gift-9">
+                        <div class="gift-icon">🎁</div>
+                        <div class="gift-date">9th Feb</div>
+                        <div class="gift-name">Chocolate Day 🍫</div>
+                        <div class="lock-overlay">🔒</div>
+                    </div>
+                </div>
+                <div class="calendar-day" data-day="10" onclick="openGift(10)">
+                    <div class="gift-box locked" id="gift-10">
+                        <div class="gift-icon">🎁</div>
+                        <div class="gift-date">10th Feb</div>
+                        <div class="gift-name">Teddy Day 🧸</div>
+                        <div class="lock-overlay">🔒</div>
+                    </div>
+                </div>
+                <div class="calendar-day" data-day="11" onclick="openGift(11)">
+                    <div class="gift-box locked" id="gift-11">
+                        <div class="gift-icon">🎁</div>
+                        <div class="gift-date">11th Feb</div>
+                        <div class="gift-name">Promise Day 🤝</div>
+                        <div class="lock-overlay">🔒</div>
+                    </div>
+                </div>
+                <div class="calendar-day" data-day="12" onclick="openGift(12)">
+                    <div class="gift-box locked" id="gift-12">
+                        <div class="gift-icon">🎁</div>
+                        <div class="gift-date">12th Feb</div>
+                        <div class="gift-name">Hug Day 🤗</div>
+                        <div class="lock-overlay">🔒</div>
+                    </div>
+                </div>
+                <div class="calendar-day" data-day="13" onclick="openGift(13)">
+                    <div class="gift-box locked" id="gift-13">
+                        <div class="gift-icon">🎁</div>
+                        <div class="gift-date">13th Feb</div>
+                        <div class="gift-name">Kiss Day 💋</div>
+                        <div class="lock-overlay">🔒</div>
+                    </div>
+                </div>
+                <div class="calendar-day" data-day="14" onclick="openGift(14)">
+                    <div class="gift-box locked" id="gift-14">
+                        <div class="gift-icon">🎁</div>
+                        <div class="gift-date">14th Feb</div>
+                        <div class="gift-name">Valentine's Day 💕</div>
+                        <div class="lock-overlay">🔒</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Gift Modals -->
+        <div id="gift-modal" class="gift-modal">
+            <div class="gift-modal-content">
+                <span class="close-gift" onclick="closeGift()">&times;</span>
+                <div id="gift-content"></div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
