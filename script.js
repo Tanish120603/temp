@@ -41,7 +41,7 @@ const valentineGifts = {
     14: {
         name: "Valentine's Day 💕",
         date: "14th February",
-        message: "Happy Valentine's Day baby,\nI love you! 💕"
+        message: "Happy Valentine's Day my Rami 🥰 \n You made it to the last day and finally I got a yes to my question 😂 \n I am so lucky to have you in my life, baki toh you know my choices are good (was proven yesterday again) \n I love you so much 😘. \n One more date added to our collection as first valentine's ❤️"
     }
 };
 
